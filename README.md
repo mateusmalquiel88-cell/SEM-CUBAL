@@ -31,7 +31,9 @@ Abra `http://localhost:3000` após o container subir.
 ## Estrutura do repositório
 
 - package.json - scripts e dependências
-- src/ - código-fonte (contém função exemplo add e servidor Express básico)
+- src/ - código-fonte (contém função exemplo add, servidor Express e camada SQLite)
+- src/db.js - inicialização da base de dados SQLite, seed de exemplos e queries do dashboard
+- public/ - dashboard estático em HTML/CSS/JS
 - test/ - testes Jest e integração usando supertest
 - docker-compose.yml - configurado para build e expor a aplicação Node.js
 - Dockerfile - imagem Node.js para execução em container
@@ -46,6 +48,23 @@ Abra `http://localhost:3000` após o container subir.
 - reduzir-dev-deps: Auditar e reduzir devDependencies.
 
 (Os IDs e descrições dos itens do backlog estão registrados na tabela de tarefas da sessão.)
+
+## Dashboard e base de dados
+
+O projeto agora inclui uma base de dados SQLite com tabelas reais para users, projects e tasks, juntamente com um dashboard em HTML/CSS/JS.
+
+Endpoints disponíveis:
+- GET /dashboard — página do dashboard
+- GET /api/dashboard — resumo com métricas e estado das tarefas
+- GET /api/tasks — lista das tarefas existentes
+
+Exemplo de execução local:
+
+  npm start
+
+Depois abra:
+- http://localhost:3000/dashboard
+- http://localhost:3000/api/dashboard
 
 ## Como contribuir / próximos passos sugeridos
 
