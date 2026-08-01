@@ -4,7 +4,7 @@
   "private": true,
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node src/server.js",
     "test": "jest --runInBand",
     "lint": "eslint --config .eslintrc.js \"src/**\" \"test/**\"",
     "lint:fix": "eslint --config .eslintrc.js --fix \"src/**\" \"test/**\""
@@ -16,5 +16,9 @@
     "eslint-plugin-node": "^11.1.0",
     "jest": "^29.6.1",
     "prettier": "^3.9.6"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "supertest": "^7.2.2"
   }
 }
