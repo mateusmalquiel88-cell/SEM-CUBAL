@@ -6,14 +6,14 @@
   "scripts": {
     "start": "node src/server.js",
     "test": "jest --runInBand",
-    "lint": "eslint --config .eslintrc.js \"src/**\" \"test/**\"",
-    "lint:fix": "eslint --config .eslintrc.js --fix \"src/**\" \"test/**\""
+    "lint": "eslint \"src/**\" \"test/**\"",
+        "lint:fix": "eslint --fix \"src/**\" \"test/**\""
   },
   "dependencies": {
     "express": "^5.2.1"
   },
   "devDependencies": {
-    "eslint": "^8.57.1",
+    "eslint": "^10.8.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-jest": "^29.16.0",
     "eslint-plugin-node": "^11.1.0",
