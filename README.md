@@ -22,12 +22,19 @@ Executar (exemplo):
 
   npm start
 
+Rodar em Docker:
+
+  docker-compose up --build
+
+Abra `http://localhost:3000` após o container subir.
+
 ## Estrutura do repositório
 
 - package.json - scripts e dependências
-- src/ - código-fonte (atualmente contém função exemplo add)
-- test/ - testes Jest
-- docker-compose.yml - presente, atualmente vazio (pendente de configuração)
+- src/ - código-fonte (contém função exemplo add e servidor Express básico)
+- test/ - testes Jest e integração usando supertest
+- docker-compose.yml - configurado para build e expor a aplicação Node.js
+- Dockerfile - imagem Node.js para execução em container
 
 ## Backlog técnico (itens criados automaticamente)
 
