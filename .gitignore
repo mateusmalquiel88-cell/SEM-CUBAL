@@ -1,0 +1,5 @@
+node_modules/
+commitmsg.txt
+.DS_Store
+data/
+coverage/
