@@ -6,8 +6,9 @@
   "scripts": {
     "start": "node src/server.js",
     "test": "jest --runInBand",
+    "coverage": "jest --coverage --runInBand",
     "lint": "eslint \"src/**\" \"test/**\"",
-        "lint:fix": "eslint --fix \"src/**\" \"test/**\""
+    "lint:fix": "eslint --fix \"src/**\" \"test/**\""
   },
   "dependencies": {
     "express": "^5.2.1"
